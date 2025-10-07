@@ -253,7 +253,7 @@ st.title("Conversor de Inventário")
 # --- INPUTS DO USUÁRIO ---
 tipo_material = st.selectbox("Tipo de Material:", ["Produto Acabado", "Bobina"])
 grupo_produto = st.text_input("Grupo de Produto:")
-data_inventario = st.date_input("Data:")
+data_inventario = st.date_input("Data:", format="DD/MM/YYYY") # <-- MUDANÇA AQUI
 uploaded_files = st.file_uploader(
     "Importar arquivos .csv",
     type="csv",
